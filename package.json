@@ -1,0 +1,39 @@
+{
+  "name": "@ai-native-solutions/fallmirror-mcp",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MCP server for FallMirror - exposes the 7-angle probing engine, safety layer, witness detection, session chord generator as MCP tools and resources.",
+  "main": "./src/server.js",
+  "bin": {
+    "fallmirror-mcp": "./src/server.js"
+  },
+  "files": ["src/", "manifest.json", "README.md", "LICENSE"],
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "@ai-native-solutions/fallmirror-sdk": "^1.0.0",
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "fallmirror",
+    "reflection",
+    "sovereign",
+    "ai-native-solutions"
+  ],
+  "author": "AI-Native Solutions",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sjgant80-hub/fallmirror-mcp.git"
+  },
+  "homepage": "https://github.com/sjgant80-hub/fallmirror-mcp",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

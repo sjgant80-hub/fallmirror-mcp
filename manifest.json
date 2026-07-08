@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/modelcontextprotocol/registry/main/schemas/server.schema.json",
+  "name": "fallmirror-mcp",
+  "displayName": "FallMirror",
+  "version": "1.0.0",
+  "description": "Private reflection tool - 7-angle probing engine, safety layer, witness detection, session chord.",
+  "publisher": "AI-Native Solutions",
+  "license": "MIT",
+  "homepage": "https://github.com/sjgant80-hub/fallmirror-mcp",
+  "runtime": "node",
+  "entryPoint": "src/server.js",
+  "transport": "stdio",
+  "capabilities": {
+    "tools": [
+      "fallmirror_pick_probe",
+      "fallmirror_score_response",
+      "fallmirror_safety_check",
+      "fallmirror_detect_witness_stage",
+      "fallmirror_generate_chord",
+      "fallmirror_bloom_ema",
+      "fallmirror_session_to_torus"
+    ],
+    "resources": [
+      "fallmirror://probes",
+      "fallmirror://axes",
+      "fallmirror://witness-markers",
+      "fallmirror://crisis-resources"
+    ]
+  }
+}
